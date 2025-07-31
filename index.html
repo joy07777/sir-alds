@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JOY</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Material Icons for Burger Menu -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <div class="overlay"></div>
+
+  <nav>
+    <div class="logo">Joy A.</div>
+    <!-- Burger Menu Icon -->
+    <span class="material-icons menu-icon" onclick="toggleMenu()"></span>
+    
+    <ul id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">More About Me</a></li>
+    </ul>
+  </nav>
+
+  <section id="home">
+    <div class="profile-wrapper">
+      <img src="joy.jpg" alt="Main Photo" class="top" />
+      <img src="joi.jpg" alt="Hover Photo" class="bottom" />
+    </div>
+    <div class="text-content">
+      <h1>Hi, I'm Joy!</h1>
+      <p>Welcome to my personal space! I'm a student who loves tech and nature. Hover on my profile photo to see a fun surprise!</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>More About Me</h2>
+    <div class="photo-grid">
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <img src="photo1.jpg" alt="Photo 1">
+          </div>
+          <div class="flip-back">I enjoy hiking, the scenery relaxes me.</div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <img src="photo2.jpg" alt="Photo 2">
+          </div>
+          <div class="flip-back">I was also part of the student council in our school!</div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <img src="photo3.jpg" alt="Photo 3">
+          </div>
+          <div class="flip-back">I'm the secretary of our club, PSITS.</div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <img src="photo4.jpg" alt="Photo 4">
+          </div>
+          <div class="flip-back">I also bake. Yum!</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("nav-links").classList.toggle("show");
+    }
+  </script>
+</body>
+</html>
